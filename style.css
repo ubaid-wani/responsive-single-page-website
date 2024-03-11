@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url("img1.jpg");
+	background-size: cover;
+	font-family: 'Dosis', sans-serif;
+}
+/* icon bar*/
+#myicon{
+	 color: #fff;
+	 position: absolute;
+	 top: 20px;
+	 right: 20px;
+	 font-size: 2rem;
+	 opacity: 0; 
+	 visibility: hidden;
+}
+#myicon:hover{
+	color: #9acd32;
+}
+
+#myicon:hover{
+	color:#9acd32;
+
+}
+
+.header_menu{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 30%;
+	text-align: center; 
+}
+
+.logo h1{	
+	font-size: 50px;
+	padding-left: 30px;
+	/* color: #9acd32; */
+	color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+.menu_list{
+	width: 70%;
+	text-align: right;
+	padding-right: 50px;
+}
+
+.menu_list li{
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	letter-spacing: 2px;
+    padding-left: 50px;
+	line-height: 80px;
+}
+
+.menu_list li a{
+	color:rgba(255, 255, 255, .8);
+	text-decoration: none;
+}
+
+.menu_list li a:hover{
+	color:#9acd32;;
+}
+
+.header_content{
+	text-transform: uppercase;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color:rgba(255, 255, 255, .8);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header_content h2{
+	margin-bottom: 50px;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 0.3em;
+}
+
+.header_content h1{
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 0.7em;
+}
+
+.header_content button{
+	height: auto;
+	padding:8px 37px;
+	color:#fff;
+	border:2px solid #fff;
+	font-size: 12px;
+	background-color: transparent;
+	margin-right: 20px;
+	text-transform: uppercase;
+	/* text-decoration: none; */
+	color: white;
+	letter-spacing: 1px;
+}
+.header_content button:hover{
+	background-color:#9acd32;
+	border:1px solid white;
+}
+
+
+/* media query */
+
+@media (max-width:990px){
+	
+	.logo{
+		position: absolute;
+		top: 45px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	 .menu_list{
+		width: 100%;
+		padding: 0;
+		
+	} 
+	.menu_list ul{
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	#myicon{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.header_menu.responsive{
+		width: 100% !important;
+		height: 100vh !important;
+		background-color: black;
+	}
+		
+	.header_menu.responsive .menu_list ul{
+		opacity: 1;
+		visibility: visible;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	.header_menu.responsive .menu_list ul li{
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	 .menu_list ul li:hover{
+		 background-color: #9acd32; 
+
+	}
+	.menu_list ul li:hover > a{
+		color:black;
+		font-size: 15px;
+		font-weight: 900;
+
+   }
+	.header_content.hider{
+		z-index: -1;
+	}
+
+
+}
+
+@media (max-width:800px){
+	#myicon {
+		font-size: 1.9rem;
+		
+	}
+	
+	.header_content h1{
+    font-size: 42px;
+	letter-spacing: 0.6em;
+	}
+	.header_content h2{
+		font-size: 15px;
+		letter-spacing: 0.3em;
+	}
+}
+
+@media (max-width:600px){
+.header_content h1{
+	font-size:38px ;
+	letter-spacing: 0.5em;
+}
+.header_content h2{
+	font-size: 14px;
+	letter-spacing: 0.3em;
+}	
+.logo h1 {
+	padding-left: 0;
+}
+}
+@media (max-width:480px){
+	.header_content h1{
+		font-size:45px ;
+		letter-spacing: 0.5em;
+	}
+	.header_content h2{
+		font-size: 14px;
+		letter-spacing: 0.3em;
+	}	
+	
+}
